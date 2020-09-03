@@ -10,15 +10,18 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
     	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"/></script>
     	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
         <script src="app.module.js"></script>
+        <script src="app.config.js"></script>
         <script src="phone-list/phone-list.module.js"></script>
         <script src="phone-list/phone-list.component.js"></script> <!--indicates that is using a component-->
-        
-
-        
+        <script src="phone-detail/phone-detail.module.js"></script>
+        <script src="phone-detail/phone-detail.component.js"></script>
+    
     	<title>Tutorial AngularJS</title>
 	</head>
 	<body>
-        <phone-list></phone-list>
+        <!-- <phone-list></phone-list> -->
+        <div ng-view></div>
 	</body>
 </html>
