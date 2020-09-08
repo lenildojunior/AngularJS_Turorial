@@ -8,13 +8,17 @@
     	<meta name="author" content="">
         <!-- CSS only -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="app.css" />
+        <link rel="stylesheet" href="app.animations.css" />
     	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"/></script>
     	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-resource.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
         <script src="app.module.js"></script>
         <script src="app.config.js"></script>
+        <script src="app.animations.js"></script>
         <script src="phone-list/phone-list.module.js"></script>
         <script src="phone-list/phone-list.component.js"></script> <!--indicates that is using a component-->
         <script src="phone-detail/phone-detail.module.js"></script>
@@ -27,7 +31,8 @@
     	<title>Tutorial AngularJS</title>
 	</head>
 	<body>
-        <!-- <phone-list></phone-list> -->
-        <div ng-view></div>
+        <div class="view-container">
+            <div ng-view class="view-frame"></div>
+        </div>
 	</body>
 </html>
